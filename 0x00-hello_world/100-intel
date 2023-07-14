@@ -1,5 +1,2 @@
 #!/bin/bash
-nasm -f elf -o ${CFILE%.*}.o $CFILE
-ld -m elf_i386 -o ${CFILE%.*} ${CFILE%.*}.o
-objdump -d ${CFILE%.*} -M intel > ${CFILE%.*}.s
-rm ${CFILE%.*}.o ${CFILE%.*}
+gcc -S -masm=intel $CFILE -o ${CFILE%.*}.s
