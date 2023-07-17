@@ -8,27 +8,23 @@
 
 int main(void)
 {
-	int first_digit1, second_digit1, first_digit2, second_digit2, num1, num2;
+	int num1, num2, fd1, sd1, fd2, sd2;
 
 	for (num1 = 0; num1 <= 99; num1++)
 	{
-		first_digit1 = num1 / 10;
-		second_digit1 = num1 % 10;
+		fd1 = num1 / 10;
+		sd1 = num1 % 10;
 		for (num2 = num1; num2 <= 99; num2++)
 		{
-			first_digit2 = num2 / 10;
-			second_digit2 = num2 % 10;
+			fd2 = num2 / 10;
+			sd2 = num2 % 10;
 			if (num1 <= num2)
 			{
-				putchar(first_digit1 / 10 + '0');
-				putchar(first_digit1 % 10 + '0');
-				putchar(second_digit1 / 10 + '0');
-				putchar(second_digit1 % 10 + '0');
+				putchar(fd1 + '0');
+				putchar(sd1 + '0');
 				putchar(' ');
-				putchar(first_digit2 / 10 + '0');
-				putchar(first_digit2 % 10 + '0');
-				putchar(second_digit2 / 10 + '0');
-				putchar(second_digit2 % 10 + '0');
+				putchar(fd2 + '0');
+				putchar(sd2 + '0');
 				if (num1 != 99 || num2 != 99)
 				{
 					putchar(',');
