@@ -8,13 +8,13 @@
 
 int main(void)
 {
-	int first_digit1, second_digit1, first_digit2, second_digit2;
+	int first_digit1, second_digit1, first_digit2, second_digit2, num1, num2;
 
-	for (int num1 = 0; num1 <= 99; num1++)
+	for (num1 = 0; num1 <= 99; num1++)
 	{
 		first_digit1 = num1 / 10;
 		second_digit1 = num1 % 10;
-		for (int num2 = num1; num2 <= 99; num2++)
+		for (num2 = num1; num2 <= 99; num2++)
 		{
 			first_digit2 = num2 / 10;
 			second_digit2 = num2 % 10;
