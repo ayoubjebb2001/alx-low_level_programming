@@ -25,7 +25,7 @@ int main(void)
 				putchar(' ');
 				putchar(fd2 + '0');
 				putchar(sd2 + '0');
-				if (num1 != 99 || num2 != 99)
+				if (num1 != 98 || num2 != 99)
 				{
 					putchar(',');
 					putchar(' ');
